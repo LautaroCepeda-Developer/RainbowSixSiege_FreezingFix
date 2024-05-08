@@ -76,8 +76,8 @@ void change_process_affinity(const DWORD process_id)
     // Changing the process cpu affinity to the cpu 0
     SetProcessAffinityMask(handle_process, 1);
 
-    // Waiting 0.25 seconds
-    Sleep(250);
+    // Waiting 0.5 seconds
+    Sleep(500);
 
     // Restoring the default process cpu affinity
     SetProcessAffinityMask(handle_process,dw_process_affinity);
